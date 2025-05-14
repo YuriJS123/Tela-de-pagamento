@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+body {
+    background-color: #303030;
+    margin: 0;
+    padding-bottom: 1px;
+}
+
+.painel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 310px;
+}
+
+.painel img {
+    width: 100%;
+}
+
+.botao-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    width: 130px;
+    height: auto;
+    position: absolute;
+}
+
+.botao-voltar img {
+    width: 100%;
+    display: block;
+}
+
+.texto-voltar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: sans-serif;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.marca {
+    position: absolute;
+    left: 89%;
+    font-family: 'Rubik Doodle Shadow', cursive;
+    font-size: 3.5rem;
+    margin: 0%;
+    color: #000000;
+}
+
+.informacao {
+  display: flex;
+  flex-wrap: wrap; /* PERMITE QUE OS ELEMENTOS SE AJUSTEM */
+  gap: 15%;
+  color: white;
+  align-items: flex-start;
+}
+
+#info-pagamento {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* ou space-between se quiser maior separação */
+  gap: 10px; /* espaço entre os elementos */
+  margin-top: 10px;
+  padding-left: 30px;
+  margin-right: 14.4%;
+  color: white;
+}
+  /* margin-top: 20px; */
+   
+    
+  .btn-pagamento {
+    background-color: #c2185b;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin: 0; /* remove margem negativa */
+    margin-right: 16%;
+  }
+
+
+
+.informacao h2 {
+    font-size: 1.3rem;
+    margin: 0;
+    margin-left: -1%;
+    font-family: 'Mitr';
+}
+
+
+
+.escolha {
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-left: 1%; 
+    margin-top: -6%;
+    position: fixed;
+}
+
+.escolha h1 {
+    font-size: 20px;
+    
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.radio-tamanho {
+    transform: scale(1.2); /* Aumenta o tamanho do input em 1.5 vezes */
+}
+
+.ingresso {
+    position: fixed;
+    left: 68%;
+    width: 39%;
+    top: 33%;
+    z-index: 1100; /* maior que o z-index da barra */
+}
+
+.barra-inferior {
+  height: 50px;
+  position: fixed;
+  margin-top: 3.7%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #161616; /* Altere conforme necessário */
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.linha {
+    border-bottom: 1px solid gray;
+    width: 15vw;
+    margin-bottom: 2vh;
+}
+
+.dados {
+    display: block;
+    margin-bottom: 1%;
+    font-size: 1rem;
+    color: #F9F9F9;
+    margin-left: 1px;
+}
+
+.coluna-esquerda {
+    padding: 1%;
+    display: block;
+    margin-top: 0; /* Remove espaçamento superior */
+  padding-top: 0;
+  
+}
+.coluna-esquerda h2 {
+  margin-bottom: 20px; /* ou ajuste como preferir */
+}
+
+
+.input-com-icone {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+
+  
+  max-width: 500px;
+}
+
+.input-com-icone input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: smaller;
+}
+
+.input-com-icone i {
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+/* Adiciona estilo para o texto ao lado do input */
+.texto {
+  margin-top: 10px;
+  padding: 0;
+  color: white;
+  font-size: 14px;
+  max-width: 600px;
+}
+
+
+
+
+
+
+/* Ajustes no estilo do input */
+.coluna-esquerda input {
+    display: flex;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    
+    color: #ffffff;
+    
+}
+
+
+.total-ingresso {
+  font-size: small;
+  color: white;
+ 
+  
+}
+
+.total-ingresso .valor {
+  background: linear-gradient(to right, #c9184a, #a20636); /* vermelho com leve gradiente */
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-left: 6px;
+  
+}
+
+
+
+.coluna-direita {
+  flex: 1;
+  padding: 1%;
+  font-family: 'Mitr';
+  font-size: 0.9rem;
+  align-items:center ;
+}
+
+@media (max-width: 768px) {
+  .informacao {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    width: 100%;
+    padding: 0;
+  }
+
+  .ingresso {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .painel {
+    height: auto;
+  }
+
+  .botao-voltar {
+    width: 90px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .texto-voltar {
+    font-size: 14px;
+  }
+
+  .marca {
+    font-size: 2rem;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .input-com-icone {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-com-icone input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .input-com-icone i {
+    font-size: 1rem;
+    padding-top: 5px;
+  }
+
+  .opcao {
+    font-size: 14px;
+  }
+
+  .total-ingresso {
+    font-size: small;
+    margin-top: 10px;
+  }
+
+  .total-ingresso .valor {
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 15px;
+  }
+
+  .linha {
+    width: 50%;
+    margin: 10px 0;
+  }
+
+  .barra-inferior {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  .escolha {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .barra-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 10px;
+    z-index: 1000;
+  }
+}
+/* Fundo escuro */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; /* Mostrar com JS */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Caixa verde clara */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.613); /* <- agora tudo por trás ficará branco */
+  display: none; /* será alterado para flex no JS */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #e0fff0;
+  border: 3px solid #00aa66;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 5%;
+}
+/* Status box com ícone e texto */
+.status-box {
+  background-color: #33cc66;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.status-box .icon {
+  font-size: 24px;
+}
+
+/* Link ver recibo */
+.ver-recibo {
+  display: inline-block;
+  margin-top: 15px;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Botão Finalizar */
+.btn-finalizar {
+  padding: 10px 25px;
+  background: linear-gradient(to right, #cc0033, #99001a);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+}
+
+.btn-finalizar:hover {
+  background: linear-gradient(to right, #99001a, #660011);
+}
